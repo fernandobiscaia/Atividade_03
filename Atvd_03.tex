@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Atividade 03}
+\author{Fernando Biscaia }
+\date{November 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Objetivo da Atividade}
+
+Esta atividade teve como objetivo trabalhar com o uso de uma API já existente, extraindo seus dados e trazendo algum resultado referente ao mesmo.
+Para o presente trabalho foi utilizado os dados em formato Json no link a seguir: "https://dados.antt.gov.br/dataset/f22f6b08-4050-4dad-8a93-bc68826629d4/resource/01cbd874-2b38-4053-81cd-0aedf63fe193/download/empresas_brasil_peru.json".
+Esta base apresenta os dados da relação de empresas habilitadas para fazer a ligação Brasil/Peru. O objetivo final deste trabalho é trazer entre esta relação as 10 empresas com maior número de veículos e gerar um gráfico de barras da mesma.
+
+\section{Trabalhando os Dados}
+
+Para faer as requisições na API foi necessário a utilização da biblioteca "requests", através do comando "get". Além de trabalhar com a biblioteca pandas para normalização do Json em DataFrame.
+A extração dos dados e filtros aplicados podem ser consultados no arquivo "Atvd_03.py" no link a seguir: "https://github.com/fernandobiscaia/Atividade_03" .
+
+\section{Resultados}
+
+O resultado das 10 empresas com maior número de veículos pode ser observado no mesmo documento citado acima.
+Foi optado por plotar somente as 10 empresas com maior número de veículos. O mesmo racional poderia ser também aplicado para outras métricas, como por exemplo empresas com maior capacidade carga ou empresas com mais tempo com mais tempo de habilitação para ligação Brasil/Peru.
+Estas poderiam ser métricas para aperfeiçoamento do trabalho.
+
+\end{document}
